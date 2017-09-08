@@ -1,5 +1,5 @@
 package org.launchcode.models.data;
-
+//packaged code placed in this file for organizational reasons to package code surrounding the data together
 import javafx.geometry.Pos;
 import org.launchcode.models.*;
 
@@ -19,7 +19,7 @@ public class JobData {
     private JobFieldData<CoreCompetency> coreCompetencies = new JobFieldData<>();
     private JobFieldData<PositionType> positionTypes = new JobFieldData<>();
 
-
+    //constructor filling in an instance (loadData method is in JobDataImporter)
     private JobData() {
         JobDataImporter.loadData(this);
     }
@@ -32,6 +32,7 @@ public class JobData {
         return instance;
     }
 
+    //using find
     public Job findById(int id) {
         for (Job job : jobs) {
             if (job.getId() == id)

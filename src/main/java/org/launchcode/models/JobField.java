@@ -14,6 +14,7 @@ public class JobField {
         nextId++;
     }
 
+    //creates unique id for jobfield
     public JobField(String aValue) {
         this();
         value = aValue;

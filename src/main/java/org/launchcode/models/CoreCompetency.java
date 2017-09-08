@@ -1,5 +1,5 @@
 package org.launchcode.models;
-
+//CoreCompetency extends JobField
 /**
  * Created by LaunchCode
  */

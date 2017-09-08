@@ -1,5 +1,5 @@
 package org.launchcode.models;
-
+//PositionType extends JobField
 /**
  * Created by LaunchCode
  */
