@@ -1,10 +1,12 @@
 package org.launchcode.models;
-
+//introduces an object-oriented design to the application
+//contains fields for name, employer, location, coreCompetency and positionType
+//employer, location, etc are now classes of their own (previously I had these as strings)
 /**
  * Created by LaunchCode
  */
 public class Job {
-
+    //includes id field which is used to uniquely identify Job objects
     private int id;
     private static int nextId = 1;
 

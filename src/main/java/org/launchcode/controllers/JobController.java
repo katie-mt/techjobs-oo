@@ -27,10 +27,12 @@ public class JobController {
 
         // TODO #1 - get the Job with the given ID and pass it into the view
         //pass data from the controller into the view
+        //calling the method findByID within the JobData.java class and calling the parameter ID.  Set this to the variable retrieveJob
         Job retrieveJob = jobData.findById(id);
         model.addAttribute("job",retrieveJob);
         //String ISTHISWORKING = "isthisworking";
         //model.addAttribute("ISTHISWORKING",ISTHISWORKING);
+        //job-detail comes from template
         return "job-detail";
     }
 
