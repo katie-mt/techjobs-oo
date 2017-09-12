@@ -26,7 +26,7 @@ public class JobForm {
     private int locationsId;
 
     @NotNull
-    private int coreCompetenciesId;
+    private int coreCompetencyId;
 
     @NotNull
     private int positionTypesId;
@@ -108,8 +108,8 @@ public class JobForm {
     }
 
 
-    //coreCompetencies and coreCompetenciesId getters and setters
-    public ArrayList<CoreCompetency> getcoreCompetencies() {
+    //coreCompetencies and coreCompetencyId getters and setters
+    public ArrayList<CoreCompetency> getCoreCompetencies() {
         return coreCompetencies;
     }
 
@@ -117,12 +117,12 @@ public class JobForm {
         this.coreCompetencies = coreCompetencies;
     }
 
-    public int getcoreCompetenciesId() {
-        return coreCompetenciesId;
+    public int getcoreCompetencyId() {
+        return coreCompetencyId;
     }
 
-    public void setcoreCompetenciesId(int coreCompetenciesID) {
-        this.coreCompetenciesId = coreCompetenciesId;
+    public void setcoreCompetencyId(int coreCompetencyID) {
+        this.coreCompetencyId = coreCompetencyId;
     }
 
 
@@ -139,7 +139,7 @@ public class JobForm {
         return positionTypesId;
     }
 
-    public void setPositionTypesId(int positionTypeId) {
+    public void setPositionTypesId(int positionTypesId) {
         this.positionTypesId = positionTypesId;
     }
 }
