@@ -32,6 +32,9 @@ public class JobField {
         value = aValue;
     }
 
+
+    //set up to return the value field.
+    //Name, ID, Skill, Location, CoreCompetency all inherit this method.
     public String toString() {
         return value;
     }

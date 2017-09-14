@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+//displays the form used to create a new job
+
 <html xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head">
 </head>
@@ -9,18 +12,26 @@
 <div class="container body-content">
 
     <form th:object="${jobForm}" method="post">
-
+        <!--pulling  jobForm.java-->
         <div class="form-group">
+            <!--"Name" is the label of the dropdown-->
             <label th:for="name">Name</label>
+            <!--Pulling in "name" from JobForm.java-->
             <input th:field="*{name}" />
+            <!--if user doesn't enter at least 1 character, error will appear-->
             <div th:errors="*{name}"></div>
         </div>
 
         <div class="form-group">
+            <!--label for the dropdown-->
             <label th:for="employerId">Employer</label>
+            <!--pulling in employerID from JobForm.java-->
             <select th:field="*{employerId}">
+                <!--for loop to loop over employer in employers-->
                 <option th:each="employer : *{employers}"
+                        <!--assigning the ID to the employer-->
                         th:value="${employer.id}"
+                        <!--assigning the name of the employer as the value-->
                         th:text="${employer.value}"></option>
             </select>
         </div>

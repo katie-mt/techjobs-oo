@@ -1,5 +1,7 @@
 package org.launchcode.models.forms;
 
+//contains most of the data needed to display and process a form to create a new job
+
 import org.launchcode.models.CoreCompetency;
 import org.launchcode.models.Employer;
 import org.launchcode.models.Location;

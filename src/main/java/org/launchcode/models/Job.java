@@ -10,10 +10,9 @@ public class Job {
     private int id;
     private static int nextId = 1;
 
-    //these classes represent each of the other properties
-    //Employer, Location, CoreCompetency, PositionType all have value and ids
+
+    //Classes for Employer, Location, CoreCompetency, PositionType all have value and ids
     //all extend JobField and don't have any additional properties of their own.
-    //only name is a string.
     private String name;
     private Employer employer;
     private Location location;

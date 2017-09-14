@@ -18,6 +18,7 @@ import java.util.List;
 /**
  * Created by LaunchCode
  */
+//imports the data from the CSV file
 public class JobDataImporter {
 
     private static final String DATA_FILE = "job_data.csv";

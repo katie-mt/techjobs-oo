@@ -1,5 +1,6 @@
 package org.launchcode.models.data;
 //packaged code placed in this file for organizational reasons to package code surrounding the data together
+
 import javafx.geometry.Pos;
 import org.launchcode.models.*;
 
@@ -32,7 +33,7 @@ public class JobData {
         return instance;
     }
 
-    //using find
+    //find a job by its ID
     public Job findById(int id) {
         for (Job job : jobs) {
             if (job.getId() == id)
@@ -47,6 +48,8 @@ public class JobData {
     }
 
 
+    //calling JobFieldType which enables the ask of data related to a specific field or all fields
+    //Find all jobs matching the given string in the given column/property
     public ArrayList<Job> findByColumnAndValue(JobFieldType column, String value) {
 
         ArrayList<Job> matchingJobs = new ArrayList<>();
@@ -59,7 +62,7 @@ public class JobData {
         return matchingJobs;
     }
 
-
+    //Find all jobs matching the given string in any fields
     public ArrayList<Job> findByValue(String value) {
 
         ArrayList<Job> matchingJobs = new ArrayList<>();
