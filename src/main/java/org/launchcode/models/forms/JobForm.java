@@ -101,11 +101,11 @@ public class JobForm {
         this.locations = locations;
     }
 
-    public int getlocationsId() {
+    public int getLocationsId() {
         return locationsId;
     }
 
-    public void setlocationsId(int locationId) {
+    public void setLocationsId(int locationsId) {
         this.locationsId = locationsId;
     }
 
@@ -119,13 +119,20 @@ public class JobForm {
         this.coreCompetencies = coreCompetencies;
     }
 
-    public int getcoreCompetencyId() {
+    public int getCoreCompetencyId() {
         return coreCompetencyId;
     }
 
-    public void setcoreCompetencyId(int coreCompetencyID) {
+    public void setCoreCompetencyId(int coreCompetencyId) {
         this.coreCompetencyId = coreCompetencyId;
     }
+    //    public int getcoreCompetencyId() {
+//        return coreCompetencyId;
+//    }
+//
+//    public void setcoreCompetencyId(int coreCompetencyID) {
+//        this.coreCompetencyId = coreCompetencyId;
+//    }
 
 
     //positionTypes getters and setters
