@@ -28,10 +28,10 @@
             <!--pulling in employerID from JobForm.java-->
             <select th:field="*{employerId}">
                 <!--for loop to loop over employer in employers-->
+                <!--assigning the ID to the employer-->
+                <!--assigning the name of the employer as the value-->
                 <option th:each="employer : *{employers}"
-                        <!--assigning the ID to the employer-->
                         th:value="${employer.id}"
-                        <!--assigning the name of the employer as the value-->
                         th:text="${employer.value}"></option>
             </select>
         </div>
