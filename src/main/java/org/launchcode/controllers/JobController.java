@@ -69,11 +69,12 @@ public class JobController {
 
         //what makes an object Job requires the 5 attributes (name, employer, location, positionType, coreCompetency
         Job addedJob = new Job(name, employer, location, positionType, coreCompetency);
-        //adding the new job to the session
-        model.addAttribute(addedJob);
 
+        //adding the new job to the session in a key, value format
+        model.addAttribute("job", addedJob);
+        jobData.add(addedJob);
 
-        return "redirect:/job/?id=" + addedJob.getId();
+        return "redirect:/job?id=" + addedJob.getId();
 
     }
 }
