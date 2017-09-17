@@ -55,7 +55,8 @@ public class JobController {
 //            return ("ERROR, PLEASE ENTER A VALUE");
 
         if (errors.hasErrors()) {
-            model.addAttribute(new JobForm());
+            //model.addAttribute(new JobForm());
+
             return "new-job";
         }
 
