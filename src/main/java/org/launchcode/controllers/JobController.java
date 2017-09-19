@@ -61,13 +61,14 @@ public class JobController {
         }
 
 
-        //must be in same order as in Job (name, employer, location, positionType, coreCompetency
+        //pulling information for name, employer, location, positionType, coreCompetency from the form
         String name = jobForm.getName();
         Employer employer = jobData.getEmployers().findById(jobForm.getEmployerId());
         Location location = jobData.getLocations().findById(jobForm.getLocationsId());
         PositionType positionType = jobData.getPositionTypes().findById(jobForm.getPositionTypesId());
         CoreCompetency coreCompetency = jobData.getCoreCompetencies().findById(jobForm.getCoreCompetencyId());
 
+        //must be in same order as in Job (name, employer, location, positionType, coreCompetency
         //what makes an object Job requires the 5 attributes (name, employer, location, positionType, coreCompetency
         Job addedJob = new Job(name, employer, location, positionType, coreCompetency);
 
